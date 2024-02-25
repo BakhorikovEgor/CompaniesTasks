@@ -13,12 +13,14 @@ public class FlatFiguresTests
     public static IEnumerable<TestCaseData> CorrectDataForAreaCalculationsOfCircles ()
     {
         yield return new TestCaseData(new Circle(1), Math.PI);
+        yield return new TestCaseData(new Circle(0), 0);
     }
     
     
     public static IEnumerable<TestCaseData> CorrectDataForAreaCalculationsOfTriangles ()
     {
         yield return new TestCaseData(new Triangle(3, 2, 2), 1.984);
+        yield return new TestCaseData(new Triangle(3, 4, 5), 6);
     }
     
     
